@@ -4,7 +4,7 @@ import Mapteat from "./conponents/Mapteat";
 function App() {
   return (
     <div className="App">
-      <p>Hello World!!!</p>
+      <p className="text-center">Hello World!!!</p> <br />
       <Mapteat/>
     </div>
   );

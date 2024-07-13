@@ -1,8 +1,12 @@
 import React from 'react'
-
+import svgimg from '../worldmap.svg'
 function Mapteat() {
   return (
-    <div className='bg-slate-700'>Mapteat</div>
+    <>
+    <div className='bg-slate-500 text-slate-200'>
+    <img src={svgimg} alt="SVG as an image"/>
+    </div>
+    </>
   )
 }
 
