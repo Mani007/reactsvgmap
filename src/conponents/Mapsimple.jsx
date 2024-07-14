@@ -1,5 +1,5 @@
 import React,{useEffect,useState,useRef} from "react"
-import { ComposableMap, Geographies, Geography } from "react-simple-maps"
+import { ComposableMap, Geographies, Geography, ZoomableGroup, Graticule, Annotation, Sphere } from "react-simple-maps"
 //import {world} from "../world.json"
 const geoUrl = "https://raw.githubusercontent.com/lotusms/world-map-data/main/world.json"
 
@@ -18,8 +18,8 @@ export default function Mapsimple() {
    // console.log(countries)
   return (
     <>
-   
     <ComposableMap>
+   <ZoomableGroup>
       <Geographies geography={geoUrl}  >
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -37,6 +37,7 @@ export default function Mapsimple() {
           ))
         }
       </Geographies>
+    </ZoomableGroup>
     </ComposableMap>
     <div>
         <h1>Country List</h1>
