@@ -1,13 +1,13 @@
 import React from "react"
 import { ComposableMap, Geographies, Geography } from "react-simple-maps"
-
-const geoUrl =
-  "https://raw.githubusercontent.com/lotusms/world-map-data/main/world.json"
+import {world} from "../world.json"
+const geoUrl = world
+  //"https://raw.githubusercontent.com/lotusms/world-map-data/main/world.json"
 
 export default function Mapsimple() {
   return (
     <ComposableMap>
-      <Geographies geography={geoUrl}>
+      <Geographies geography={world}>
         {({ geographies }) =>
           geographies.map((geo) => (
             <Geography key={geo.rsmKey} geography={geo} />
