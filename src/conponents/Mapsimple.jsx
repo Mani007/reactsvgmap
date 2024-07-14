@@ -40,10 +40,12 @@ export default function Mapsimple() {
       <Geographies geography={geoUrl}  >
         {({ geographies }) =>
           geographies.map((geo,index) => {
-            return (<Geography key={geo.rsmKey} geography={geo} style={{
-                default: {
-                  fill: "#91C4F2",
-                },
+            const isos = countries.find( (s)=> s.name === geo.properties.name)
+            //console.log(isos)
+            return (<Geography key={geo.rsmKey} geography={geo} 
+                fill =  {  isos ? colorScale( isos["population_density"] ) : '#333'}
+                style={{
+                
                 hover: {
                   fill: "#9D79BC",
                 },
