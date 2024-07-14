@@ -14,10 +14,10 @@ export default function Mapsimple() {
                   fill: "#91C4F2",
                 },
                 hover: {
-                  fill: "#8CA0D7",
+                  fill: "#9D79BC",
                 },
                 pressed: {
-                  fill: "#9D79BC",
+                  fill: "#8CA0D7",
                 },
               }}/>
           ))
