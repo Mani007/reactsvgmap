@@ -6,7 +6,7 @@ const geoUrl = "https://raw.githubusercontent.com/lotusms/world-map-data/main/wo
 export default function Mapsimple() {
   return (
     <ComposableMap>
-      <Geographies geography={geoUrl}>
+      <Geographies geography={geoUrl} fill="#8ca0d7">
         {({ geographies }) =>
           geographies.map((geo) => (
             <Geography key={geo.rsmKey} geography={geo} />
