@@ -83,14 +83,15 @@ export default function Mapsimple() {
               }}
               onClick = { () => {
                 //setSelectedCountry = true;
-               handleOpen()
+               //handleOpen()
                 return (
-                   <Modal isOpen={open} onClose={handleClose}>
-                    <>
-                     <h3>A computer science portal!</h3>
-                    {geo.properties.name}
-                    </>
-                    </Modal>
+                //    <Modal isOpen={open} onClose={handleClose}>
+                //     <>
+                //      <h3>A computer science portal!</h3>
+                //     {geo.properties.name}
+                //     </>
+                //     </Modal>
+                alert(`this is alert for  ${geo.properties.name}` )
                 )
                // return (
                 //     <div>
