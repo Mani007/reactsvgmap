@@ -892,15 +892,15 @@
     "continent": [
       {
         "continent": "US",
-        "average": "12"
+        "average": "1200000"
       },
       {
         "continent": "EMEA",
-        "average": "24"
+        "average": "2400000"
       },
       {
         "continent": "LATAM",
-        "average": "18"
+        "average": "1800000"
       }
     ]
   }
